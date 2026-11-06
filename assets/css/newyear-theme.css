@@ -1,0 +1,94 @@
+body.theme-newyear {
+  background: linear-gradient(180deg, #edf5ff 0%, #dfeafc 100%);
+}
+.theme-newyear .sidebar {
+  background: rgba(245,247,255,0.74);
+}
+.theme-newyear .hero-card {
+  background: linear-gradient(135deg, rgba(16,39,86,0.96), rgba(31,61,156,0.88));
+}
+.theme-newyear .hero-card::before,
+.theme-newyear .hero-card::after {
+  content: "";
+  position: absolute;
+  inset: auto auto 20px 40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.45), transparent 70%);
+  filter: blur(6px);
+}
+.theme-newyear .hero-card::after {
+  left: auto;
+  right: 40px;
+  bottom: 30px;
+}
+.theme-newyear .hero-card .primary-btn {
+  background: linear-gradient(90deg, #f9d66d 0%, #f3a93a 100%);
+}
+.theme-newyear .top-actions .icon-btn {
+  background: rgba(255,255,255,0.7);
+}
+.theme-newyear .card-block {
+  background: rgba(255,255,255,0.66);
+  border-color: rgba(148,163,184,0.22);
+}
+.theme-newyear .quick-actions button {
+  background: rgba(216,232,255,0.8);
+}
+.theme-newyear .news-item .news-icon {
+  background: linear-gradient(180deg, rgba(191,219,254,0.9), rgba(147,197,253,0.8));
+}
+.theme-newyear .tag-row span {
+  background: rgba(254,243,199,0.94);
+}
+.theme-newyear .hero-plate {
+  background: radial-gradient(circle at center, #f8fafc 0%, #d8e5ff 20%, #bfd1ff 55%, #8da4d6 100%);
+}
+.theme-newyear .turkey {
+  background: linear-gradient(135deg, #d17d44 0%, #e7b35a 26%, #c2552f 52%, #9f4f2b 100%);
+}
+.theme-newyear .story-row .story {
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.38);
+}
+.theme-newyear .story-empty {
+  background: linear-gradient(180deg, #fdf2f8, #fce7f3);
+}
+.winter-decor {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 180px;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 0%, rgba(255,255,255,0.08) 100%);
+  z-index: 0;
+}
+.winter-decor--left {
+  left: 0;
+  background: radial-gradient(circle at 30% 10%, rgba(255,255,255,0.8) 0%, transparent 35%);
+}
+.winter-decor--right {
+  right: 0;
+  left: auto;
+  background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.8) 0%, transparent 35%);
+}
+#snow-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.snow-flake {
+  position: absolute;
+  top: -14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 10px rgba(255,255,255,0.65);
+  animation: snowfall linear forwards;
+}
+@keyframes snowfall {
+  0% { transform: translate3d(0, 0, 0) scale(0.7); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translate3d(var(--dx), 110vh, 0) scale(1.1); opacity: 0; }
+}
